@@ -1,2 +1,2 @@
-# HashTable
-哈希表的实现
+# Hash-research
+The implement of Hash Table.
