@@ -16,7 +16,7 @@ using namespace std;
 #define OK 1
 #define ERROR 0
 
-#define NUM         7
+#define NUM         13
 #define NULLKEY    -1
 #define SUCCESS     1
 #define UNSUCCESS   0
@@ -83,7 +83,23 @@ Status Collision(ChainHashTab H, HLink &p) {
 Status InitHashTab(ChainHashTab &H, int m)
 //
 {
-	return OK;
+	if (m >= NUM)
+	{
+		if (H.rcd = (HLink*)malloc(m * sizeof(HLink)))
+			return OK;
+		else
+			return ERROR;
+
+		for (int i = 0; i < m; i++)
+		{
+			H.rcd[i]->data = NULL;
+			H.rcd[i]->next = NULL;
+		}
+
+		H.count = 0;
+		H.size = NUM;
+	}
+	return ERROR;
 }
 
 
