@@ -3,9 +3,6 @@
 
 using namespace std;
 
-
-
-
 //¹şÏ£±íÊä³öº¯Êı
 void hashout(ChainHashTab H,int m)
 {
